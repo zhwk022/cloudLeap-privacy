@@ -1,53 +1,224 @@
-Privacy Policy
-Effective date: 2026-05-25
-This Privacy Policy describes how CloudLeap ("the App", "we", "us", or "our") handles information when you use the iPhone application.
-Summary
-CloudLeap is designed as a lightweight offline game. In its current version, the App does not require account registration, does not include advertising SDKs, does not use tracking technologies, and does not send personal data to our servers.
-Information We Collect
-In the current version of the App, we do not collect personal information from you through remote servers or third-party analytics services.
-The App stores limited gameplay-related data locally on your device only, such as:
-- high scores
-- sound settings
-- other basic in-app preferences needed for gameplay
-This local data stays on your device and is not used to identify you.
-Information We Do Not Collect
-In the current version of the App, we do not collect or process:
-- your name
-- email address
-- phone number
-- precise location
-- contacts
-- photos
-- payment information
-- health data
-- browsing history
-- advertising identifiers for tracking purposes
-Tracking, Analytics, and Advertising
-The App does not currently:
-- use third-party advertising SDKs
-- use third-party analytics SDKs
-- track you across apps or websites
-- show an App Tracking Transparency permission prompt
-Account and Login
-The App does not require account creation, login, or profile registration.
-Data Sharing
-Because we do not collect personal data through the App in its current version, we do not sell, rent, or share your personal information with third parties for advertising or marketing purposes.
-We may disclose information only if required to do so by applicable law, regulation, legal process, or enforceable governmental request.
-Data Retention
-Locally stored gameplay data remains on your device until:
-- you delete the App
-- you reset the App's local data through device or app-level actions, if available
-Because we do not maintain user accounts or remote user databases for the current version, we do not retain personal account records on our servers.
-Children's Privacy
-The App is a general audience game and does not knowingly collect personal information from children. If you believe a child has provided personal information to us through the App, please contact us and we will review the issue promptly.
-Security
-We design the current version of the App to minimize privacy risk by avoiding unnecessary data collection and by keeping gameplay data local to the device where possible. However, no method of storage or transmission is guaranteed to be completely secure.
-International Users
-If you use the App outside your home country or region, you understand that any future updates to the App may be governed by the laws applicable to the jurisdictions in which the App is distributed and operated.
-Changes to This Privacy Policy
-We may update this Privacy Policy from time to time to reflect changes in the App, legal requirements, or business operations. If we make material changes, we will update the "Effective date" at the top of this page.
-Contact Us
-If you have questions about this Privacy Policy, please contact us at:
-[replace-with-support-email@example.com]
-You may also provide a support page URL here once available:
-[replace-with-support-url]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudLeap Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0b1220;
+      --card: rgba(15, 23, 42, 0.82);
+      --card-border: rgba(148, 163, 184, 0.18);
+      --text: #e5eefc;
+      --muted: #b6c2d9;
+      --accent: #7dd3fc;
+      --accent-2: #c4b5fd;
+      --shadow: 0 24px 80px rgba(2, 6, 23, 0.45);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(56, 189, 248, 0.22), transparent 30%),
+        radial-gradient(circle at top right, rgba(167, 139, 250, 0.18), transparent 28%),
+        linear-gradient(180deg, #08101d 0%, #101a2b 100%);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .wrap {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 72px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      border-radius: 28px;
+      padding: 32px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    .hero {
+      margin-bottom: 20px;
+      padding: 28px;
+      background: linear-gradient(135deg, rgba(125, 211, 252, 0.18), rgba(196, 181, 253, 0.14));
+      border-radius: 24px;
+      border: 1px solid rgba(191, 219, 254, 0.18);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(125, 211, 252, 0.14);
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1, h2 {
+      margin: 0 0 14px;
+      line-height: 1.2;
+    }
+
+    h1 {
+      margin-top: 16px;
+      font-size: clamp(32px, 5vw, 48px);
+    }
+
+    h2 {
+      margin-top: 28px;
+      font-size: 22px;
+    }
+
+    p, li {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin: 12px 0;
+    }
+
+    .meta {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .note {
+      margin-top: 22px;
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: rgba(15, 23, 42, 0.55);
+      border: 1px solid rgba(148, 163, 184, 0.16);
+    }
+
+    code {
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(148, 163, 184, 0.12);
+      color: #f8fafc;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.95em;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .lang-link {
+      margin-top: 16px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 640px) {
+      .wrap {
+        width: min(100% - 20px, 920px);
+        padding: 20px 0 40px;
+      }
+
+      .card,
+      .hero {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <div class="hero">
+        <span class="eyebrow">Privacy Policy</span>
+        <h1>CloudLeap</h1>
+        <p>This Privacy Policy explains how CloudLeap handles information when you use the iPhone app.</p>
+        <p class="meta">Effective date: 2026-05-25</p>
+        <p class="lang-link">Chinese version: <a href="privacy-policy.zh-CN.html">privacy-policy.zh-CN.html</a></p>
+      </div>
+
+      <h2>Summary</h2>
+      <p>CloudLeap is designed as a lightweight offline game. In its current version, the app does not require account registration, does not include advertising SDKs, does not use tracking technologies, and does not send personal data to our servers.</p>
+
+      <h2>Information We Collect</h2>
+      <p>In the current version of the app, we do not collect personal information through remote servers or third-party analytics services.</p>
+      <p>The app stores limited gameplay-related data locally on your device only, such as:</p>
+      <ul>
+        <li>High scores</li>
+        <li>Sound settings</li>
+        <li>Other basic in-app preferences needed for gameplay</li>
+      </ul>
+      <p>This local data stays on your device and is not used to identify you.</p>
+
+      <h2>Information We Do Not Collect</h2>
+      <p>In the current version of the app, we do not collect or process:</p>
+      <ul>
+        <li>Your name</li>
+        <li>Email address</li>
+        <li>Phone number</li>
+        <li>Precise location</li>
+        <li>Contacts</li>
+        <li>Photos</li>
+        <li>Payment information</li>
+        <li>Health data</li>
+        <li>Browsing history</li>
+        <li>Advertising identifiers for tracking purposes</li>
+      </ul>
+
+      <h2>Tracking, Analytics, and Advertising</h2>
+      <p>The app does not currently:</p>
+      <ul>
+        <li>Use third-party advertising SDKs</li>
+        <li>Use third-party analytics SDKs</li>
+        <li>Track you across apps or websites</li>
+        <li>Show an App Tracking Transparency permission prompt</li>
+      </ul>
+
+      <h2>Account and Login</h2>
+      <p>The app does not require account creation, login, or profile registration.</p>
+
+      <h2>Data Sharing</h2>
+      <p>Because we do not collect personal data through the app in its current version, we do not sell, rent, or share your personal information with third parties for advertising or marketing purposes.</p>
+      <p>We may disclose information only if required by applicable law, regulation, legal process, or enforceable governmental request.</p>
+
+      <h2>Data Retention</h2>
+      <p>Locally stored gameplay data remains on your device until:</p>
+      <ul>
+        <li>You delete the app</li>
+        <li>You reset the app's local data through device or app-level actions, if available</li>
+      </ul>
+      <p>Because we do not maintain user accounts or remote user databases for the current version, we do not retain personal account records on our servers.</p>
+
+      <h2>Children's Privacy</h2>
+      <p>The app is a general-audience game and does not knowingly collect personal information from children. If you believe a child has provided personal information through the app, please contact us and we will review the issue promptly.</p>
+
+      <h2>Security</h2>
+      <p>We design the current version of the app to minimize privacy risk by avoiding unnecessary data collection and by keeping gameplay data local to the device where possible. However, no method of storage or transmission is guaranteed to be completely secure.</p>
+
+      <h2>International Users</h2>
+      <p>If you use the app outside your home country or region, you understand that any future updates may be governed by the laws applicable to the jurisdictions in which the app is distributed and operated.</p>
+
+      <h2>Changes to This Privacy Policy</h2>
+      <p>We may update this Privacy Policy from time to time to reflect changes in the app, legal requirements, or business operations. If we make material changes, we will update the effective date at the top of this page.</p>
+
+      <h2>Contact Us</h2>
+      <p>If you have questions about this Privacy Policy, please contact us at:</p>
+      <p><code>zhwk022@126.com</code></p>
+      <p><code>https://github.com/zhwk022</code></p>
+    </section>
+  </main>
+</body>
+</html>
